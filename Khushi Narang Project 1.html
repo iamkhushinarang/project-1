@@ -1,0 +1,2407 @@
+<style>
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+
+    body {
+        background: #000;
+        color: #000;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mySwiper2 {
+        height: 80%;
+        width: 100%;
+    }
+
+    .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+
+
+    @media  only screen and (max-width: 767px) {
+        .image-row-gallery {
+            height: initial !important;
+        }
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="csrf-token" content="H05JsZRQv3spCvYLVKnZ9ph3143g7T0Ea5jg8RMG">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>    PAHAD ORGANICS
+</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description"
+        content="Welcome to farmer near me. A great place to connect with farmers near you to obtain fresh, high-quality products.">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+            <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- Schema.org markup for Google+ -->
+
+    <meta itemprop="name" content="PAHAD ORGANICS" />
+
+    <meta itemprop="description" content="PAHAD ORGANICS" />
+
+    <meta itemprop="image" content="https://farmernear.me/uploads/site/logos/16614567381-site_logo.png" />
+
+    <!-- Twitter Card data -->
+
+    <meta name="twitter:card" content="website" />
+
+    <meta name="twitter:site" content="@farmernearme" />
+
+    <meta name="twitter:title" content="PAHAD ORGANICS" />
+
+    
+    <meta name="twitter:description" content="PAHAD ORGANICSIt is an initiative of PAHAD TRUST - Professional Assistance for Hill Area Development registered in 2018 by an alumni of School of Planning New Delhi. Founder of PAHAD TRUST has been..." />
+
+    <meta name="twitter:creator" content="@farmernearme" />
+
+    <meta name="twitter:image" content="https://farmernear.me/uploads/avatar/1659952701977-avatar.png" />
+
+    <!-- Open Graph data -->
+
+    <meta property="og:title" content="PAHAD ORGANICS" />
+
+    <meta property="og:type" content="profile" />
+
+    <meta property="og:url" content="https://farmernear.me/shop/PAHAD-ORGANICS-Himachal-Pradesh-Distt-Kangra-176057-82" />
+
+            <meta property="og:image" content="https://farmernear.me/uploads/avatar/1659952701977-avatar.png" />
+    
+    <meta property="og:image:width" content="600" />
+
+    <meta property="og:image:height" content="400" />
+
+    <meta property="og:description" content="PAHAD ORGANICSIt is an initiative of PAHAD TRUST - Professional Assistance for Hill Area Development registered in 2018 by an alumni of School of Planning New Delhi. Founder of PAHAD TRUST has been..." />
+
+    <meta property="og:site_name" content="Farmer Near Me" />
+
+    <meta property="fb:app_id" content="415882849297270" />
+    <style>
+        .show-cart li {
+            display: flex;
+        }
+
+        @media  only screen and (max-width: 600px) {
+            .quan-width {
+                width: 100%;
+            }
+        }
+
+        /* Outline Social Share Buttons */
+
+        .btn-social-outline {
+            background-color: transparent;
+            background-image: none;
+            text-decoration: none;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+        }
+
+        .btn-fb-outline {
+            color: #3b5998 !important;
+            border-color: #3b5998 !important;
+        }
+
+        .btn-fb-outline:hover,
+        .btn-fb-outline:active {
+            color: #ffffff !important;
+            background-color: #3b5998;
+        }
+
+        .btn-whats-outline {
+            color: #25D366 !important;
+            border-color: #25D366 !important;
+        }
+
+        .btn-whats-outline:hover,
+        .btn-whats-outline:active {
+            color: #ffffff !important;
+            background-color: #25D366;
+        }
+
+        .btn-tw-outline {
+            color: #1da1f2;
+            border-color: #1da1f2;
+        }
+
+        .btn-tw-outline:hover,
+        .btn-tw-outline:active {
+            color: #ffffff !important;
+            background-color: #1da1f2;
+        }
+
+        .btn-in-outline {
+            color: #0077b5 !important;
+            border-color: #0077b5 !important;
+        }
+
+        .btn-in-outline:hover,
+        .btn-in-outline:active {
+            color: #ffffff !important;
+            background-color: #0077b5;
+        }
+
+        .btn-gp-outline {
+            color: #db4437;
+            border-color: #db4437;
+        }
+
+        .btn-gp-outline:hover,
+        .btn-gp-outline:active {
+            color: #ffffff !important;
+            background-color: #db4437;
+        }
+
+        .btn-rd-outline {
+            color: #ff4500;
+            border-color: #ff4500;
+        }
+
+        .btn-rd-outline:hover,
+        .btn-rd-outline:active {
+            color: #ffffff !important;
+            background-color: #ff4500;
+        }
+
+        .btn-hn-outline {
+            color: #ff4000;
+            border-color: #ff4000;
+        }
+
+        .btn-hn-outline:hover,
+        .btn-hn-outline:active {
+            color: #ffffff !important;
+            background-color: #ff4000;
+        }
+
+        /* Fluid Styles */
+
+        .fluid {
+            display: flex;
+        }
+
+        .fluid a {
+            flex-grow: 1;
+            margin-right: 0.25rem;
+        }
+
+        .fluid a:last-child {
+            margin-right: 0rem;
+        }
+
+        form .error {
+            color: #ff0000;
+        }
+    </style>
+
+    
+        <!-- Favicon -->
+    <link rel="shortcut
+            icon" type="image/x-icon" href="https://farmernear.me/uploads/site/logos/16614567381-site_logo.png" />
+
+        <!-- CSS
+    ============================================ -->
+
+        <!-- Vendor CSS (Contain Bootstrap, Icon Fonts) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://farmernear.me/assets/css/vendor/Pe-icon-7-stroke.css" />
+
+        <!-- Plugin CSS (Global Plugins Files) -->
+        <link rel="stylesheet" href="https://farmernear.me/assets/css/plugins/animate.min.css">
+        <link rel="stylesheet" href="https://farmernear.me/assets/css/plugins/jquery-ui.min.css">
+        <link rel="stylesheet" href="https://farmernear.me/assets/css/plugins/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://farmernear.me/assets/css/plugins/nice-select.css">
+        <link rel="stylesheet" href="https://farmernear.me/assets/css/plugins/magnific-popup.min.css" />
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="https://farmernear.me/assets/css/style.css">
+        <link rel="stylesheet" href="https://farmernear.me/assets/css/custom.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css" />
+
+        <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+        <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+            rel="stylesheet">
+
+        
+        <style>
+            body {
+                color: #010101;
+            }
+
+            .mfp-bottom-bar {
+                font-family: none !important;
+            }
+
+            a .loader-wrapper {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                background-color: #151617cf;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text {
+                color: #fbae17;
+                display: inline-block;
+                margin-left: 5px;
+            }
+
+            .bounceball {
+                position: relative;
+                display: inline-block;
+                height: 37px;
+                width: 15px;
+            }
+
+            .bounceball:before {
+                position: absolute;
+                content: '';
+                display: block;
+                top: 0;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #fbae17;
+                transform-origin: 50%;
+                animation: bounce 500ms alternate infinite ease;
+            }
+
+            @keyframes  bounce {
+                0% {
+                    top: 30px;
+                    height: 5px;
+                    border-radius: 60px 60px 20px 20px;
+                    transform: scaleX(2);
+                }
+
+                35% {
+                    height: 15px;
+                    border-radius: 50%;
+                    transform: scaleX(1);
+                }
+
+                100% {
+                    top: 0;
+                }
+            }
+        </style>
+</head>
+
+<body>
+    
+
+    <div class="main-wrapper d-flex flex-column">
+
+        <!-- Header -->
+        <!-- Begin Main Header Area -->
+   <header class="main-header_area position-relative">
+       <div class="header-top border-bottom d-none d-md-block p-2">
+           <div class="container">
+               <div class="row align-items-center">
+                   <div class="col-6">
+                       <div class="header-top-left mt-2 mb-2">
+                           <ul class="dropdown-wrap text-matterhorn">
+                               <li>
+                                   
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="col-6">
+                       <div class="header-top-right text-matterhorn">
+                           <p class="shipping mb-0">Get directly from the <span>Farmers</span> at your home</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="header-middle py-5">
+           <div class="container">
+               <div class="row align-items-center">
+                   <div class="col-lg-12">
+                       <div class="header-middle-wrap">
+                                                      <a href="/" class="header-logo">
+                               <img src="https://farmernear.me/uploads/site/logos/16614567381-site_logo.png" alt="Site Logo">
+                           </a>
+                           <div class="row header-search-area d-none d-lg-flex">
+                               <div class="col-md-6" style="margin-left:8%">
+                                   <form id="nearME" action="https://farmernear.me/near-places" action='GET'
+                                       class="header-searchbox">
+                                       <input type="hidden" name='user_lat' id='user-lat'>
+                                       <input type="hidden" name='user_long' id='user-long'>
+
+                                       <button type='submit' onmouseover="getLocation()"
+                                           class="btn btn-primary mx-2 py-2 w-50 text-center"><i
+                                               class="fa fa-location-arrow"></i> Near me</button>
+
+
+                                       
+                                       <p id="demo" class='d-none'>
+
+
+                                       </p>
+                                   </form>
+                               </div>
+                               <div class="col-md-6" style="margin-left:-21%">
+                                   <form action="https://farmernear.me/search" method="GET" class="header-searchbox">
+                                       <input type="hidden" name="home" value="home">
+
+                                       <input class="input-field" type="search" name="q"
+                                           placeholder="City or Pincode">
+                                       <button class="btn btn-outline-whisper btn-primary-hover" type="submit"><i
+                                               class="pe-7s-search"></i></button>
+                                   </form>
+                               </div>
+                           </div>
+
+                           <div class="header-right">
+                               <ul>
+
+                                   <li>
+                                                                                  <a class="btn btn-primary mx-2 py-2  text-center" href="https://farmernear.me/login">
+                                               Login</a>
+                                                                  </li>
+                           
+                           <li class="mobile-menu_wrap d-block d-lg-none">
+                               <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn pl-0">
+                                   <i class="pe-7s-menu"></i>
+                               </a>
+                           </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       </div>
+       <div class="container d-block d-lg-none">
+           <div class="d-block d-lg-none">
+               <form id="nearME" action="https://farmernear.me/near-places" action='GET' class="header-searchbox">
+                   <input type="hidden" name='user_lat' id='user-lat-phone'>
+                   <input type="hidden" name='user_long' id='user-long-phone'>
+                   <button type='submit' ontouchstart="getPhoneLocation()"
+                       class="btn btn-primary mx-2 py-2 w-100 text-center"><i class="fa fa-location-arrow"></i> Near
+                       me</button>
+                   
+                   <p id="demo" class='d-none'>
+
+
+                   </p>
+               </form>
+           </div>
+           <div class="d-block d-lg-none mt-3 mb-3">
+               <form action="https://farmernear.me/search" method="GET" class="header-searchbox">
+                   <input type="hidden" name="home" value="home">
+
+                   <input class="input-field" type="search" name="q" placeholder="City or Pincode">
+                   <button class="btn btn-outline-whisper btn-primary-hover" type="submit"><i
+                           class="pe-7s-search"></i></button>
+               </form>
+           </div>
+       </div>
+       <div class="main-header header-sticky" data-bg-color="#8ec640">
+           <div class="container">
+
+               <div class="main-header_nav position-relative">
+                   <div class="row align-items-center">
+                       <div class="col-lg-12 d-none d-lg-block">
+                           <div class="main-menu">
+                               <nav class="main-nav">
+                                   <ul>
+                                       <li>
+                                           <a href="https://farmernear.me">Home</a>
+                                       </li>
+                                       
+                                       <li>
+                                           <a href="https://farmernear.me/about-us">About</a>
+                                       </li>
+                                       <li>
+                                           <a href="https://farmernear.me/contact-us">Contact</a>
+                                       </li>
+                                   </ul>
+                               </nav>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <div class="mobile-menu_wrapper" id="mobileMenu">
+           <div class="harmic-offcanvas-body">
+               <div class="inner-body">
+                   <div class="harmic-offcanvas-top">
+                       <a href="#" class="button-close"><i class="pe-7s-close"></i></a>
+                   </div>
+                   <div class="offcanvas-user-info text-center px-6 pb-5">
+                       <div class=" text-silver">
+                           <p class="shipping mb-0">Get directly from the <span class="text-primary">Farmers</span>
+                               at your home</p>
+                       </div>
+                                                  <ul class="dropdown-wrap justify-content-center text-silver">
+                               <li>
+                                   <a href="https://farmernear.me/login" class="text-center">Login
+                                   </a>
+                               </li>
+                               <li>
+                                   &nbsp; | &nbsp;
+                               </li>
+                               <li>
+                                   <a href="https://farmernear.me/register">
+                                       Sign up
+                                   </a>
+                               </li>
+                           </ul>
+                                          </div>
+                   <div class="offcanvas-menu_area">
+                       <nav class="offcanvas-navigation">
+                           <ul class="mobile-menu">
+                               <li>
+                                   <a href="https://farmernear.me">Home</a>
+                               </li>
+                               <li>
+                                   <form id="nearME" action="https://farmernear.me/near-places" action='GET'
+                                       class="header-searchbox">
+                                       <input type="hidden" name='user_lat' id='user-lat-phone'>
+                                       <input type="hidden" name='user_long' id='user-long-phone'>
+                                       <button type='submit' ontouchstart="getPhoneLocation()" class="btn"
+                                           style="color: #c0c0c0;font-size: 14px; text-transform: uppercase;display: block;padding: 0 30px;">Near
+                                           me</button>
+                                       
+                                       <p id="demo" class='d-none'>
+
+
+                                       </p>
+                                   </form>
+                               </li>
+                               <li>
+                                   <a href="https://farmernear.me/about-us">About</a>
+                               </li>
+                               <li>
+                                   <a href="https://farmernear.me/contact-us">Contact</a>
+                               </li>
+                           </ul>
+                       </nav>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="offcanvas-search_wrapper" id="searchBar">
+           <div class="harmic-offcanvas-body">
+               <div class="container h-100">
+                   <div class="offcanvas-search">
+                       <div class="harmic-offcanvas-top">
+                           <a href="#" class="button-close"><i class="pe-7s-close"></i></a>
+                       </div>
+                       <span class="searchbox-info">Start typing and press Enter to search</span>
+                       <form action="https://farmernear.me/search" method="GET" class="hm-searchbox">
+                           <input type="hidden" name="home" value="home">
+                           <input type="text" name="q" placeholder="City or Pincode">
+                           <button class="search-btn" type="submit"><i class="pe-7s-search"></i></button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="global-overlay"></div>
+   </header>
+   <!-- Main Header Area End Here -->
+   <style>
+       .avatar-upper {
+           border-radius: 50%;
+           width: 36px;
+           height: 36px;
+           margin: -8px 0;
+           float: left;
+           margin-right: -2px;
+           margin-top: -1px !important;
+       }
+   </style>
+                                    <section class="pt-5 mb-4">
+            <div class="container bg-light">
+                <div class="row image-row-gallery" style="height:600px">
+                    <!-- Container for the image gallery -->
+                                                                <div class="col-md-9" style="height:100%">
+                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                                                                                                                                                                                                            <div class="swiper-slide">
+                                                                                                                    <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659860528.png" />
+                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861925.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861936.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861946.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861956.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861965.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861974.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861983.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861995.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659862019.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659862036.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659862057.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                            
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div thumbsSlider="" class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                                                                                                                                                                                                            <div class="swiper-slide">
+                                                                                                                    <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659860528.png" />
+                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861925.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861936.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861946.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861956.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861965.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861974.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861983.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659861995.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659862019.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659862036.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                                            <img
+                                                                src="https://farmernear.me/uploads/shop/sliders/1659862057.jpg" />
+                                                        </div>
+                                                                                                                                                                                                                                                            </div>
+                            </div>
+                        </div>
+                    
+                    <div class="col-md-3 card text-center mt-5">
+                        <p class="card-title ml-3 mb-3 p-3 bg-light" style="font-size:20px;width:106%;margin-left:-3%">
+                            <i class="fa-solid fa-user text-primary"></i><span style="margin-left:2%">Contact
+                                Farmer</span>
+                        </p>
+                        <div class="d-block">
+                                                            <img height="200px" width="200px" class="lazyload rounded-circle"
+                                    src="https://farmernear.me/uploads/avatar/1659952701977-avatar.png"
+                                    alt="PAHAD ORGANICS" style="object-fit:cover" />
+                                                        <div class="ms-2 mt-3">
+                                <h1 class="fw-600 h4 mb-2  text-primary">
+                                    PAHAD ORGANICS                                         <span class=""><i class="fa fa-check-circle"
+                                                style="color: green;"></i></span>
+                                                                    </h1>
+                                <p><span class="fw-bold">Shop Id - </span> 39941596</p>
+                                                                
+                                <span class="fw-bold">Shop Number - </span> <a id="number"
+                                    data-last="3824" href="tel:9817403824">
+                                    981740<span style="cursor:pointer">XXXX</span></a>
+                                
+                                                                <div class="location mt-3">
+                                                                            <p class="text-color-custom fw-bold">Address - <span class="text-dark fw-light">
+                                                                                                    opposite clock tower PO ,
+                                                                                                                                                    Sidhbari Dharamshala,
+                                                                                                                                                    Distt Kangra,
+                                                                                                                                                    Himachal Pradesh
+                                                                                            </span></p>
+                                                                    </div>
+                                <div class="office">
+                                                                            <p class="text-color-custom fw-bold">Postal Code - <span
+                                                class="text-dark fw-light">176057</span></p>
+                                                                    </div>
+                                <div class="fluid mb-3">
+                                    <a class="btn btn-sm btn-social-outline btn-fb-outline"
+                                        href="https://www.facebook.com/sharer.php?u=https://farmernear.me/shop/PAHAD-ORGANICS-Himachal-Pradesh-Distt-Kangra-176057-82&t=PAHAD ORGANICS"
+                                        target="_blank" title="Share on Facebook">
+                                        <i class="fab fa-facebook-square"></i> Share
+                                    </a>
+                                    <a class="btn btn-sm btn-social-outline btn-whats-outline"
+                                        href="https://api.whatsapp.com/send?text=https://farmernear.me/shop/PAHAD-ORGANICS-Himachal-Pradesh-Distt-Kangra-176057-82"
+                                        target="_blank" data-action="share/whatsapp/share" title="Share on whatsapp">
+                                        <i class="fa-brands fa-whatsapp mt-1"></i>
+                                    </a>
+                                    
+                                    <a class="btn btn-sm btn-social-outline btn-in-outline"
+                                        href="https://www.linkedin.com/sharing/share-offsite/?url=https://farmernear.me/shop/PAHAD-ORGANICS-Himachal-Pradesh-Distt-Kangra-176057-82&title=PAHAD ORGANICS"
+                                        target="_blank" title="Share on Linkedin">
+                                        <i class="fab fa-linkedin-in mt-1" data-fa-transform="grow-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="container store-nav bg-white mt-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 order-2 order-lg-0">
+                            <ul class="list-inline mb-0 text-center text-lg-left">
+                                <li class="list-inline-item">
+                                    <a class="text-reset d-inline-block fw-600 fs-15 p-3  border-primary border-width-2 "
+                                        href="https://farmernear.me/shop/PAHAD-ORGANICS-Himachal-Pradesh-Distt-Kangra-176057-82">Store Home</a>
+                                </li>
+
+                                
+                                <li class="list-inline-item">
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Review Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Review :
+                                            PAHAD ORGANICS
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="contact-info-form" style="overflow-x: hidden;">
+                                            <form class="contact" action="https://farmernear.me/save-reviews"
+                                                autocomplete="off" method="POST">
+                                                <input type="hidden" name="_token" value="H05JsZRQv3spCvYLVKnZ9ph3143g7T0Ea5jg8RMG">                                                <input type="hidden" name="product_id" value="0" />
+                                                <input type="hidden" name="user_id" value="977" />
+                                                <div class="stars">
+                                                    <input class="star star-5" id="star-5" value="5"
+                                                        type="radio" name="rating" />
+                                                    <label class="star star-5" for="star-5"></label>
+                                                    <input class="star star-4" id="star-4" type="radio"
+                                                        value="4" name="rating" />
+                                                    <label class="star star-4" for="star-4"></label>
+                                                    <input class="star star-3" id="star-3" type="radio"
+                                                        value="3" name="rating" />
+                                                    <label class="star star-3" for="star-3"></label>
+                                                    <input class="star star-2" id="star-2" type="radio"
+                                                        value="2" name="rating" />
+                                                    <label class="star star-2" for="star-2"></label>
+                                                    <input class="star star-1" id="star-1" type="radio"
+                                                        value="1" name="rating" />
+                                                    <label class="star star-1" for="star-1"></label>
+                                                </div>
+                                                <div class="social-input-container">
+                                                    <textarea name="comment" rows="6" class="input1 " placeholder="Review"
+                                                        required style="width: 100%;"></textarea>
+                                                </div>
+
+                                                
+                                                <button type="submit"
+                                                    class="btn btn-primary mt-3 float-end">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="mt-3">
+                    <div class="container card mb-4 p-3 ">
+                        <h4 class="border-bottom border-primary border-width-2 pb-3 d-inline-block">Description</h4>
+                        <br />
+                                                    <div class="text-left" style="font-size: 18px; color: #8ec640;">
+                                <p>PAHAD ORGANICS</p><p>It is an initiative of PAHAD TRUST - Professional Assistance for Hill Area Development registered in 2018 by an alumni of School of Planning New Delhi. Founder of PAHAD TRUST has been active in socio development sector for last 20 years.</p><p>We are working with more than 2000 hilly Farmers who are practicing natural and chemical free farming in Chamba and Kangra district of Himachal Pradesh.</p><p>PAHAD ORGANICS is a small supply chain of Organic and natural products collected from the mountain farmers.</p><p>Presently we are not getting any financial support.</p></div>
+                                            </div>
+                </section>
+                <section class="mt-3">
+                        </section>
+            <section>
+            <div class="container card p-3 mb-4">
+                <h4 class="border-bottom border-primary border-width-2 pb-3 d-inline-block">Payment Information</h4>
+                <br />
+                <div class="office">
+                                            <p class="text-color-custom fw-bold">9816630182 </p>
+                                    </div>
+            </div>
+        </section>
+                <section>
+            <div class="container card p-3 mb-4">
+                <h4 class="border-bottom border-primary border-width-2 pb-3 d-inline-block">Delivery Details</h4>
+                <br />
+                                <div class="office">
+                                            <span class="text-color-custom fw-bold">Delivery Areas - </span>
+                        
+                                                    
+                            
+                            <span class="badge bg-secondary">
+                                <i class="fa-solid fa-location-dot"></i> Through out India</span>
+                            
+                                                    
+                            
+                            <span class="badge bg-secondary">
+                                <i class="fa-solid fa-location-dot"></i> Dharamshala</span>
+                            
+                                                    
+                            
+                            <span class="badge bg-secondary">
+                                <i class="fa-solid fa-location-dot"></i> 176215</span>
+                            
+                                                    
+                            
+                            <span class="badge bg-secondary">
+                                <i class="fa-solid fa-location-dot"></i> 176216</span>
+                            
+                                                    
+                            
+                            <span class="badge bg-secondary">
+                                <i class="fa-solid fa-location-dot"></i> 176219</span>
+                            
+                                                
+                                    </div>
+                                    <div class="office mt-3"><span class="text-color-custom fw-bold">Delivery Notes - </span>
+                        <span class="text-dark fw-light"> In Dharamshala and surrounding areas we can provide home delivery but minimum amount should be more than 500</span>
+                    </div>
+                                                    <div class="office mt-3"><span class="text-color-custom fw-bold">Minimum Order Amount -
+                        </span> <span class="text-danger fw-bold"> <strong>&#8377;
+                                400</strong></span>
+                    </div>
+                            </div>
+        </section>
+
+
+        </section>
+
+                        <section class="bg-white mt-3">
+            <div class="container">
+ 
+                <div class="text-center mb-4">
+                    <h3 class="h3 fw-600 border-bottom">
+                        <span class="border-bottom border-primary border-width-2 pb-3 d-inline-block">
+                            Product Order Form
+                        </span>
+                    </h3>
+                </div>
+
+                <div class="row gutters-5"
+                    style="background: white; border-radius: 5px; box-shadow: 3px 3px 5px rgb(186 195 78), -3px -3px 5px rgb(186 195 78); overflow-y: auto; text-align: center;">
+                    
+                                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3 table-responsive">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <table class="table mb-3 text-center table-striped table-bordered"
+                                    style="margin-top: -1.3%">
+                                    <h5 class="mt-3 text-light p-3" style="background: #8ec640" >
+                                        <b>Dairy Products</b>
+                                    </h5>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Product Name</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Unit</th>
+                                            <th scope="col">Weight</th>
+                                        </tr>
+                                    </thead>
+                                                                            <tbody>
+                                            <tr style="border-bottom: none !important;">
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Brown Bread
+                                                </td>
+                                                <td class="text-success" style="font-size: 15px;">&#8377;
+                                                    50</td>
+                                                <td class="text-black" id="min-qty" value="1"
+                                                    style="font-size: 15px;">
+                                                    1</td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Pc
+                                                </td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    400gm
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);" data-name="Brown Bread"
+                                                        data-price="50"
+                                                        id="product_100" data-id="100"
+                                                        data-quantity="1"
+                                                        class="add-to-cart btn btn-primary mt-2">
+                                                        Add to Cart
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                                            <tbody>
+                                            <tr style="border-bottom: none !important;">
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Cow Milk
+                                                </td>
+                                                <td class="text-success" style="font-size: 15px;">&#8377;
+                                                    27</td>
+                                                <td class="text-black" id="min-qty" value="1"
+                                                    style="font-size: 15px;">
+                                                    1</td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Lt
+                                                </td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    500gm
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);" data-name="Cow Milk"
+                                                        data-price="27"
+                                                        id="product_101" data-id="101"
+                                                        data-quantity="1"
+                                                        class="add-to-cart btn btn-primary mt-2">
+                                                        Add to Cart
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                                            <tbody>
+                                            <tr style="border-bottom: none !important;">
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Cow Ghee
+                                                </td>
+                                                <td class="text-success" style="font-size: 15px;">&#8377;
+                                                    700</td>
+                                                <td class="text-black" id="min-qty" value="1"
+                                                    style="font-size: 15px;">
+                                                    1</td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    kg
+                                                </td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    1000gm
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);" data-name="Cow Ghee"
+                                                        data-price="700"
+                                                        id="product_102" data-id="102"
+                                                        data-quantity="1"
+                                                        class="add-to-cart btn btn-primary mt-2">
+                                                        Add to Cart
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                                            <tbody>
+                                            <tr style="border-bottom: none !important;">
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Lassi
+                                                </td>
+                                                <td class="text-success" style="font-size: 15px;">&#8377;
+                                                    30</td>
+                                                <td class="text-black" id="min-qty" value="1"
+                                                    style="font-size: 15px;">
+                                                    1</td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    pc
+                                                </td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    200ml
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);" data-name="Lassi"
+                                                        data-price="30"
+                                                        id="product_103" data-id="103"
+                                                        data-quantity="1"
+                                                        class="add-to-cart btn btn-primary mt-2">
+                                                        Add to Cart
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                                            <tbody>
+                                            <tr style="border-bottom: none !important;">
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Curd
+                                                </td>
+                                                <td class="text-success" style="font-size: 15px;">&#8377;
+                                                    45</td>
+                                                <td class="text-black" id="min-qty" value="1"
+                                                    style="font-size: 15px;">
+                                                    1</td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    kg
+                                                </td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    400gm
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);" data-name="Curd"
+                                                        data-price="45"
+                                                        id="product_104" data-id="104"
+                                                        data-quantity="1"
+                                                        class="add-to-cart btn btn-primary mt-2">
+                                                        Add to Cart
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                                            <tbody>
+                                            <tr style="border-bottom: none !important;">
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Paneer
+                                                </td>
+                                                <td class="text-success" style="font-size: 15px;">&#8377;
+                                                    100</td>
+                                                <td class="text-black" id="min-qty" value="1"
+                                                    style="font-size: 15px;">
+                                                    1</td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Kg
+                                                </td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    500gm
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);" data-name="Paneer"
+                                                        data-price="100"
+                                                        id="product_105" data-id="105"
+                                                        data-quantity="1"
+                                                        class="add-to-cart btn btn-primary mt-2">
+                                                        Add to Cart
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                                            <tbody>
+                                            <tr style="border-bottom: none !important;">
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Ice Cream
+                                                </td>
+                                                <td class="text-success" style="font-size: 15px;">&#8377;
+                                                    30</td>
+                                                <td class="text-black" id="min-qty" value="1"
+                                                    style="font-size: 15px;">
+                                                    1</td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Pc
+                                                </td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    250gm
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);" data-name="Ice Cream"
+                                                        data-price="30"
+                                                        id="product_108" data-id="108"
+                                                        data-quantity="1"
+                                                        class="add-to-cart btn btn-primary mt-2">
+                                                        Add to Cart
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                                            <tbody>
+                                            <tr style="border-bottom: none !important;">
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Walnuts oil
+                                                </td>
+                                                <td class="text-success" style="font-size: 15px;">&#8377;
+                                                    600</td>
+                                                <td class="text-black" id="min-qty" value="1"
+                                                    style="font-size: 15px;">
+                                                    1</td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Pc
+                                                </td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    200ml
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);" data-name="Walnuts oil"
+                                                        data-price="600"
+                                                        id="product_112" data-id="112"
+                                                        data-quantity="1"
+                                                        class="add-to-cart btn btn-primary mt-2">
+                                                        Add to Cart
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                                            <tbody>
+                                            <tr style="border-bottom: none !important;">
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Walnuts
+                                                </td>
+                                                <td class="text-success" style="font-size: 15px;">&#8377;
+                                                    600</td>
+                                                <td class="text-black" id="min-qty" value="1"
+                                                    style="font-size: 15px;">
+                                                    1</td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Kg
+                                                </td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    750gm
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);" data-name="Walnuts"
+                                                        data-price="600"
+                                                        id="product_113" data-id="113"
+                                                        data-quantity="1"
+                                                        class="add-to-cart btn btn-primary mt-2">
+                                                        Add to Cart
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                                            <tbody>
+                                            <tr style="border-bottom: none !important;">
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Honey
+                                                </td>
+                                                <td class="text-success" style="font-size: 15px;">&#8377;
+                                                    250</td>
+                                                <td class="text-black" id="min-qty" value="1"
+                                                    style="font-size: 15px;">
+                                                    1</td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    Pc
+                                                </td>
+                                                <td class="text-black" style="font-size: 15px;">
+                                                    500gm
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);" data-name="Honey"
+                                                        data-price="250"
+                                                        id="product_114" data-id="114"
+                                                        data-quantity="1"
+                                                        class="add-to-cart btn btn-primary mt-2">
+                                                        Add to Cart
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                                    </table>
+                                                    </div>
+                    
+                    
+                    <div class="col-sm-6 text-center mt-3 overflow-auto">
+                        <div class="cart" id="cart" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="cart-dialog modal-lg" role="document">
+                                <div class="cart-content">
+                                    <div class="cart-header">
+                                        <h5 class="cart-title" id="exampleModalLabel">Your List <span
+                                                style="font-size:12px">( Min.
+                                                Order Value = &#8377;
+                                                400)</span></h5>
+                                    </div>
+                                    <form class="btn-submit" method="POST" name="shipping-form">
+
+                                        <div class="modal-body">
+                                            <table class="show-cart table"></table>
+                                            <div>Total price: &#8377; <span class="total-cart"></span>
+                                                <input type="hidden" value="Cash On Delivery" name="payment_type"
+                                                    id="payment-type" />
+                                                                                                <input type="hidden" value="82" name="shop_id"
+                                                    class="shop-id" />
+                                                <input type="hidden" value="400"
+                                                    name="minimum" class="min-amount" />
+                                                <input type="hidden" value="null" name="shipping_address[]"
+                                                    id="address-id" />
+
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-footer mb-5">
+                                            <button type="button" class="clear-cart btn btn-danger">Clear
+                                                Cart</button>
+                                            <p id="min-para" class="mt-2 text-danger">Please 
+                                                <a href="login%20page%20of%20me.html">login </a> or <a href="registration%20page.html">register</a> yourself first to place order.</p>
+                                            
+                                                                                                                                        <button type="button" class="btn btn-primary" id="shipping-button"
+                                                    style="display:none">Place
+                                                    Your
+                                                    Order
+                                                    Request</button><br>
+                                                                                        <div class="container" id="shipping-div" style="display:none;">
+                                                <h6 class="mt-3">Step 2. Add Shipping Info </h6>
+                                                <p class="errors"></p>
+                                                <div class="row g-3">
+                                                    <div class="col-md-12">
+                                                        <label for="name" class="form-label">Full
+                                                            Name</label>
+                                                        <input type="text" class="form-control" id="full_name"
+                                                            name="full_name"
+                                                                                                                        placeholder="Full Name" required>
+                                                    </div>
+                                                                                                    <div class="col-md-6">
+                                                    <label for="phone" class="form-label">Mobile
+                                                        Number</label>
+                                                    <input type="number" class="form-control" id="phone"
+                                                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                        maxlength="10" name="phone"  placeholder="Phone" required>
+    </div>
+    <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email"
+             placeholder="Email Address">
+    </div>
+        <div class="col-md-12">
+        <label for="addressone" class="form-label">Flat, House
+            No.,
+            Building, Company, Apartment</label>
+        <input type="text" class="form-control" id="shipping_address_one" name="shipping_address_one"
+            placeholder="Flat, House No., Building, Company, Apartment"
+             required>
+    </div>
+    <div class="col-md-12">
+        <label for="addresstwo" class="form-label">Area,
+            Street,
+            Sector, Village</label>
+        <input type="text" class="form-control" id="shipping_address_two" name="shipping_address_two"
+            placeholder="Area, Street, Sector, Village"
+             required>
+    </div>
+    <div class="col-md-6">
+        <label for="landmark" class="form-label">Landmark</label>
+        <input type="text" class="form-control" id="shipping_landmark" name="shipping_landmark"
+             placeholder="Landmark">
+    </div>
+    <div class="col-md-6">
+        <label for="postal" class="form-label">Pin
+            Code</label>
+        <input type="number" class="form-control" id="shipping_postal" maxlength="6"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            name="shipping_postal"         placeholder="Pin Code" required>
+    </div>
+    <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="shipping_city" name="shipping_city"
+             placeholder="City" required>
+    </div>
+    <div class="col-md-6">
+        <label for="inputState" class="form-label">State</label>
+        <select class="form-control mb-3" name="shipping_state">
+                                        <option value="Andaman &amp; Nicobar Islands"
+                    >
+                    Andaman &amp; Nicobar Islands
+                </option>
+                            <option value="Andhra Pradesh"
+                    >
+                    Andhra Pradesh
+                </option>
+                            <option value="Arunachal Pradesh"
+                    >
+                    Arunachal Pradesh
+                </option>
+                            <option value="Assam"
+                    >
+                    Assam
+                </option>
+                            <option value="Bihar"
+                    >
+                    Bihar
+                </option>
+                            <option value="Chandigarh"
+                    >
+                    Chandigarh
+                </option>
+                            <option value="Chhattisgarh"
+                    >
+                    Chhattisgarh
+                </option>
+                            <option value="Dadra &amp; Nagar Haveli"
+                    >
+                    Dadra &amp; Nagar Haveli
+                </option>
+                            <option value="Daman &amp; Diu"
+                    >
+                    Daman &amp; Diu
+                </option>
+                            <option value="Delhi"
+                    >
+                    Delhi
+                </option>
+                            <option value="Goa"
+                    >
+                    Goa
+                </option>
+                            <option value="Gujarat"
+                    >
+                    Gujarat
+                </option>
+                            <option value="Haryana"
+                    >
+                    Haryana
+                </option>
+                            <option value="Himachal Pradesh"
+                    >
+                    Himachal Pradesh
+                </option>
+                            <option value="Jammu &amp; Kashmir"
+                    >
+                    Jammu &amp; Kashmir
+                </option>
+                            <option value="Jharkhand"
+                    >
+                    Jharkhand
+                </option>
+                            <option value="Karnataka"
+                    >
+                    Karnataka
+                </option>
+                            <option value="Kerala"
+                    >
+                    Kerala
+                </option>
+                            <option value="Lakshadweep"
+                    >
+                    Lakshadweep
+                </option>
+                            <option value="Madhya Pradesh"
+                    >
+                    Madhya Pradesh
+                </option>
+                            <option value="Maharashtra"
+                    >
+                    Maharashtra
+                </option>
+                            <option value="Manipur"
+                    >
+                    Manipur
+                </option>
+                            <option value="Meghalaya"
+                    >
+                    Meghalaya
+                </option>
+                            <option value="Mizoram"
+                    >
+                    Mizoram
+                </option>
+                            <option value="Nagaland"
+                    >
+                    Nagaland
+                </option>
+                            <option value="Odisha"
+                    >
+                    Odisha
+                </option>
+                            <option value="Puducherry"
+                    >
+                    Puducherry
+                </option>
+                            <option value="Punjab"
+                    >
+                    Punjab
+                </option>
+                            <option value="Rajasthan"
+                    >
+                    Rajasthan
+                </option>
+                            <option value="Sikkim"
+                    >
+                    Sikkim
+                </option>
+                            <option value="Telangana"
+                    >
+                    Telangana
+                </option>
+                            <option value="Tamil Nadu"
+                    >
+                    Tamil Nadu
+                </option>
+                            <option value="Tripura"
+                    >
+                    Tripura
+                </option>
+                            <option value="Uttar Pradesh"
+                    >
+                    Uttar Pradesh
+                </option>
+                            <option value="Uttarakhand"
+                    >
+                    Uttarakhand
+                </option>
+                            <option value="West Bengal"
+                    >
+                    West Bengal
+                </option>
+                    </select>
+    </div>
+
+    </div>
+    <button onclick="myFunction()" type="submit" class="btn btn-primary" id='order-now'>Order
+        Now</button>
+    <button onclick="cancel()" type="button" class="btn btn-danger" id='cancel-now'>Cancel</button>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="pagination pagination-center mb-4">
+        
+    </div>
+    </div>
+    </section>
+
+    <div class="modal fade" id="chat_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-zoom product-modal" id="modal-size" role="document">
+            <div class="modal-content position-relative">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-600 h5">Any query about this shop</h5>
+
+                    <button type="button" class="close border-0 bg-none" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <form class="" action="https://farmernear.me/conversation/store" method="POST">
+                    <input type="hidden" name="_token" value="H05JsZRQv3spCvYLVKnZ9ph3143g7T0Ea5jg8RMG">
+                    <input type="hidden" name="product_id" value="82" />
+                    <input type="hidden" name="receiver_id" value="977">
+                    <div class="modal-body gry-bg px-3 pt-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control mb-3" name="title"
+                                value="PAHAD ORGANICS" placeholder="Product Name" required
+                                readonly />
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" rows="8" name="message" required
+                                placeholder="Your Question"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary fw-600"
+                            data-bs-dismiss="modal">Cancel</button>
+
+                        <button type="submit" class="btn btn-primary fw-600">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Begin Footer Area -->
+<div class="footer-area">
+    <div class="footer-top section-space-y-axis-100 text-black  d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block"
+        data-bg-color="#e5ddcc">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget-item">
+                        <div class="footer-logo pb-4">
+                                                        <a href="/" class="header-logo">
+                                <img src="https://farmernear.me/uploads/site/logos/16614567381-site_logo.png" alt="Site Logo">
+                            </a>
+                        </div>
+                        <p class="short-desc mb-2">Stay connected with us
+                            For feedback, complaints, and queries
+                            Contact us at
+                        </p>
+                        <div class="widget-contact-info pb-6">
+                            <ul>
+                                <li>
+                                    <i class="pe-7s-map-marker"></i>
+                                    831 Khallni, Shimla, 171002
+                                </li>
+                                <li>
+                                    <i class="pe-7s-mail"></i>
+                                    <a href="mailto://info@example.com">hi@farmernear.me</a>
+                                </li>
+                            </ul>
+                            <a class="btn"
+                                href="https://api.whatsapp.com/send?phone=919418321172&text=Farmer Near Me"
+                                style="margin-top:13px;color:white;background:#8ec640"> <span style="font-size:14px;"><i
+                                        class="fa-brands fa-whatsapp text-white"></i></span> Contact on Whatsapp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-6 pt-10 pt-lg-0">
+                    <div class="widget-item">
+                        <h3 class="widget-title mb-5">Information</h3>
+                        <ul class="widget-list-item">
+                            <li>
+                                <a href="javascript:void(0)">Shipping</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Returns</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-6 pt-10 pt-lg-0">
+                    <div class="widget-item">
+                        <h3 class="widget-title mb-5">My Account</h3>
+                        <ul class="widget-list-item">
+                            <li>
+                                <a href="https://farmernear.me/terms-and-conditions">Terms of Use</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://farmernear.me/privacy-policy">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-10 pt-lg-0">
+                    <div class="widget-item">
+                        <h3 class="widget-title mb-5">Newsletters</h3>
+                        <p class="short-desc">Enter your email address and subscribe to stay up to date on our latest
+                            news, articles, and special offers.</p>
+                    </div>
+                    <div class="widget-form-area">
+                        <form class="widget-form" action="#">
+                            <input class="input-field" type="email" autocomplete="off" placeholder="Your Email">
+                            <div class="button-wrap pt-5">
+                                <button class="btn btn-custom-size btn-primary btn-secondary-hover rounded-0"
+                                    id="mc-submit">Send Mail</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom py-3" data-bg-color="#8ec640">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright">
+                        <span class="copyright-text text-white">© 2022 Farmer Near Me <a href="#"
+                                target="_blank">- Mera
+                                Najdiki Kisan</a> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Area End Here -->
+
+<!-- Global Vendor, plugins JS -->
+
+<!-- JS Files
+    ============================================ -->
+<!-- Global Vendor, plugins JS -->
+
+<!-- Vendor JS -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="https://farmernear.me/assets/js/vendor/jquery-3.5.1.min.js"></script>
+<script src="https://farmernear.me/assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+<script src="https://farmernear.me/assets/js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="https://farmernear.me/assets/js/vendor/jquery.waypoints.js"></script>
+
+<!--Plugins JS-->
+<script src="https://farmernear.me/assets/js/plugins/wow.min.js"></script>
+<script src="https://farmernear.me/assets/js/plugins/jquery-ui.min.js"></script>
+<script src="https://farmernear.me/assets/js/plugins/swiper-bundle.min.js"></script>
+<script src="https://farmernear.me/assets/js/plugins/jquery.nice-select.js"></script>
+<script src="https://farmernear.me/assets/js/plugins/parallax.min.js"></script>
+<script src="https://farmernear.me/assets/js/plugins/jquery.magnific-popup.min.js"></script>
+
+<!--Main JS (Common Activation Codes)-->
+<script src="https://farmernear.me/assets/js/main.js"></script>
+<script src="https://farmernear.me/assets/js/custom.js"></script>
+
+<!-- include FilePond library -->
+<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
+<!-- include FilePond plugins -->
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-validate-size/dist/filepond-plugin-image-validate-size.js">
+</script>
+<!-- include FilePond jQuery adapter -->
+<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5e133a7f7e39ea1242a33efa/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-488EMXD8G2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-488EMXD8G2');
+</script>
+
+    </div>
+
+    <div class="modal fade" id="addToCart">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-zoom product-modal" id="modal-size"
+            role="document">
+            <div class="modal-content position-relative">
+                <div class="c-preloader text-center p-3">
+                    <i class="las la-spinner la-spin la-3x"></i>
+                </div>
+                <button type="button" class="close absolute-top-right btn-icon close z-1" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true" class="la-2x">&times;</span>
+                </button>
+                <div id="addToCart-modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#vacationModal').modal('show');
+        });
+    </script>
+    <script type="text/javascript">
+        function readFile(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    var htmlPreview =
+                        '<img width="200" src="' + e.target.result + '" />' +
+                        '<p>' + input.files[0].name + '</p>';
+                    var wrapperZone = $(input).parent();
+                    var previewZone = $(input).parent().parent().find('.preview-zone');
+                    var boxZone = $(input).parent().parent().find('.preview-zone').find('.box').find('.box-body');
+
+                    wrapperZone.removeClass('dragover');
+                    previewZone.removeClass('hidden');
+                    boxZone.empty();
+                    boxZone.append(htmlPreview);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function reset(e) {
+            e.wrap('<form>').closest('form').get(0).reset();
+            e.unwrap();
+        }
+
+        $(".dropzone").change(function() {
+            readFile(this);
+        });
+
+        $('.dropzone-wrapper').on('dragover', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).addClass('dragover');
+        });
+
+        $('.dropzone-wrapper').on('dragleave', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).removeClass('dragover');
+        });
+
+        $('.remove-preview').on('click', function() {
+            var boxZone = $(this).parents('.preview-zone').find('.box-body');
+            var previewZone = $(this).parents('.preview-zone');
+            var dropzone = $(this).parents('.form-group').find('.dropzone');
+            boxZone.empty();
+            previewZone.addClass('hidden');
+            reset(dropzone);
+        });
+    </script>
+    <script type="text/javascript">
+        const INPUT_FILE = document.querySelector('#upload-files');
+        const INPUT_CONTAINER = document.querySelector('#upload-container');
+        const FILES_LIST_CONTAINER = document.querySelector('#files-list-container');
+        const FILE_LIST = [];
+        let UPLOADED_FILES = [];
+
+        const multipleEvents = (element, eventNames, listener) => {
+            const events = eventNames.split(' ');
+
+            events.forEach(event => {
+                element.addEventListener(event, listener, false);
+            });
+        };
+
+        const previewImages = () => {
+            FILES_LIST_CONTAINER.innerHTML = '';
+            if (FILE_LIST.length > 0) {
+                FILE_LIST.forEach((addedFile, index) => {
+                    const content = `
+        <div class="form__image-container js-remove-image" data-index="${index}">
+          <img class="form__image" src="${addedFile.url}" alt="${addedFile.name}">
+        </div>
+      `;
+
+                    FILES_LIST_CONTAINER.insertAdjacentHTML('beforeEnd', content);
+                });
+            } else {
+                console.log('empty')
+                INPUT_FILE.value = "";
+            }
+        }
+
+        const fileUpload = () => {
+            if (FILES_LIST_CONTAINER) {
+                multipleEvents(INPUT_FILE, 'click dragstart dragover', () => {
+                    INPUT_CONTAINER.classList.add('active');
+                });
+
+                multipleEvents(INPUT_FILE, 'dragleave dragend drop change blur', () => {
+                    INPUT_CONTAINER.classList.remove('active');
+                });
+
+                INPUT_FILE.addEventListener('change', () => {
+                    const files = [...INPUT_FILE.files];
+                    console.log("changed")
+                    files.forEach(file => {
+                        const fileURL = URL.createObjectURL(file);
+                        const fileName = file.name;
+                        if (!file.type.match("image/")) {
+                            alert(file.name + " is not an image");
+                            console.log(file.type)
+                        } else {
+                            const uploadedFiles = {
+                                name: fileName,
+                                url: fileURL,
+                            };
+
+                            FILE_LIST.push(uploadedFiles);
+                        }
+                    });
+
+                    console.log(FILE_LIST) //final list of uploaded files
+                    previewImages();
+                    UPLOADED_FILES = document.querySelectorAll(".js-remove-image");
+                    removeFile();
+                });
+            }
+        };
+
+        const removeFile = () => {
+            UPLOADED_FILES = document.querySelectorAll(".js-remove-image");
+
+            if (UPLOADED_FILES) {
+                UPLOADED_FILES.forEach(image => {
+                    image.addEventListener('click', function() {
+                        const fileIndex = this.getAttribute('data-index');
+
+                        FILE_LIST.splice(fileIndex, 1);
+                        previewImages();
+                        removeFile();
+                    });
+                });
+            } else {
+                [...INPUT_FILE.files] = [];
+            }
+        };
+
+        fileUpload();
+        removeFile();
+    </script>
+
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            }
+            //   else { 
+            //     alert("Geolocation is not supported by this browser.");
+            //   }
+        }
+
+
+
+        function showPosition(position) {
+
+            $('#user-lat').val(position.coords.latitude);
+            $('#user-long').val(position.coords.longitude);
+            //   x.innerHTML = "Latitude: " + position.coords.latitude + 
+            //   "<br>Longitude: " + position.coords.longitude;
+        }
+
+
+        function getPhoneLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPhonePosition, showError);
+            }
+            //   else { 
+            //     alert("Geolocation is not supported by this browser.");
+            //   }
+        }
+
+        function showPhonePosition(position) {
+
+            $('#user-lat-phone').val(position.coords.latitude);
+            $('#user-long-phone').val(position.coords.longitude);
+            //   x.innerHTML = "Latitude: " + position.coords.latitude + 
+            //   "<br>Longitude: " + position.coords.longitude;
+        }
+
+        function getRadiusLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showRadiusPosition, showError);
+            }
+            //   else { 
+            //     alert("Geolocation is not supported by this browser.");
+            //   }
+        }
+
+        function showRadiusPosition(position) {
+
+            $('#user-lat-radius').val(position.coords.latitude);
+            $('#user-long-radius').val(position.coords.longitude);
+            //   x.innerHTML = "Latitude: " + position.coords.latitude + 
+            //   "<br>Longitude: " + position.coords.longitude;
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    x.innerHTML = "User denied the request for Geolocation.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    x.innerHTML = "Location information is unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    x.innerHTML = "The request to get user location timed out.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    x.innerHTML = "An unknown error occurred.";
+                    break;
+            }
+        }
+    </script>
+    
+
+        <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#slideshow > div:gt(0)").hide();
+
+            var buttons =
+                "<button class=\"slidebtn prev\"><i class=\"fa fa-chevron-circle-left\"></i></button><button class=\"slidebtn next\"><i class=\"fa fa-chevron-circle-right\"></i></button\>";
+
+            var slidesl = $('.slideitem').length
+            var d = "<li class=\"dot active-dot\">&bull;</li>";
+            for (var i = 1; i < slidesl; i++) {
+                d = d + "<li class=\"dot\">&bull;</li>";
+            }
+            var dots = "<ul class=\"slider-dots\">" + d + "</ul\>";
+
+            $("#slideshow").append(dots).append(buttons);
+            var interval = setInterval(slide, 10000);
+
+            function intslide(func) {
+                if (func == 'start') {
+                    interval = setInterval(slide, 10000);
+                } else {
+                    clearInterval(interval);
+                }
+            }
+
+            function slide() {
+                sact('next', 0, 1200);
+            }
+
+            function sact(a, ix, it) {
+                var currentSlide = $('.current');
+                var nextSlide = currentSlide.next('.slideitem');
+                var prevSlide = currentSlide.prev('.slideitem');
+                var reqSlide = $('.slideitem').eq(ix);
+
+                var currentDot = $('.active-dot');
+                var nextDot = currentDot.next();
+                var prevDot = currentDot.prev();
+                var reqDot = $('.dot').eq(ix);
+
+                if (nextSlide.length == 0) {
+                    nextDot = $('.dot').first();
+                    nextSlide = $('.slideitem').first();
+                }
+
+                if (prevSlide.length == 0) {
+                    prevDot = $('.dot').last();
+                    prevSlide = $('.slideitem').last();
+                }
+
+                if (a == 'next') {
+                    var Slide = nextSlide;
+                    var Dot = nextDot;
+                } else if (a == 'prev') {
+                    var Slide = prevSlide;
+                    var Dot = prevDot;
+                } else {
+                    var Slide = reqSlide;
+                    var Dot = reqDot;
+                }
+
+                currentSlide.fadeOut(it).removeClass('current');
+                Slide.fadeIn(it).addClass('current');
+
+                currentDot.removeClass('active-dot');
+                Dot.addClass('active-dot');
+            }
+
+            $('.next').on('click', function() {
+                intslide('stop');
+                sact('next', 0, 400);
+                intslide('start');
+            }); //next
+
+            $('.prev').on('click', function() {
+                intslide('stop');
+                sact('prev', 0, 400);
+                intslide('start');
+            }); //prev
+
+            $('.dot').on('click', function() {
+                intslide('stop');
+                var index = $(this).index();
+                sact('dot', index, 400);
+                intslide('start');
+            }); //prev
+            //slideshow
+        });
+    </script>
+    <script type="text/javascript">
+        function show_chat_modal() {
+
+                            $('#login_modal').modal('show');
+            
+        }
+    </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+            var swiper2 = new Swiper(".mySwiper2", {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                    swiper: swiper,
+                },
+            });
+
+
+
+        });
+    </script>
+    <script type="text/javascript">
+        // ************************************************
+        // Shopping Cart API
+        // ************************************************
+
+        var shoppingCart = (function() {
+            // =============================
+            // Private methods and propeties
+            // =============================
+            cart = [];
+
+            // Constructor
+            function Item(name, price, count, id) {
+                this.name = name;
+                this.price = price;
+                this.count = count;
+
+                this.id = id;
+                // coPLEASEnsole.log(id);
+                // console.log(name);
+                // console.log(price);
+                // console.log(count);
+            }
+
+            // Save cart
+            // function saveCart() {
+            //     sessionStorage.setItem("shoppingCart", JSON.stringify(cart));
+            // }
+
+            // Load cart
+            // function loadCart() {
+            //     cart = JSON.parse(sessionStorage.getItem("shoppingCart"));
+            // }
+            // if (sessionStorage.getItem("shoppingCart") != null) {
+            //     loadCart();
+            // }
+
+            // =============================
+            // Public methods and propeties
+            // =============================
+            var obj = {};
+
+            // Add to cart
+            obj.addItemToCart = function(name, price, count, id) {
+                for (var item in cart) {
+                    if (cart[item].id === id) {
+                        cart[item].count++;
+                        // saveCart();
+                        return;
+                    }
+                }
+                var item = new Item(name, price, count, id);
+                // console.log(item)
+                cart.push(item);
+                // saveCart();
+            };
+            // Set count from item
+            obj.setCountForItem = function(id, count) {
+                for (var i in cart) {
+                    if (cart[i].id === id) {
+                        cart[i].count = count;
+                        break;
+                    }
+                }
+            };
+
+            // Add item to cart
+            obj.addQuantityToCart = function(id) {
+                for (var item in cart) {
+                    if (cart[item].id === id) {
+                        cart[item].count++;
+                    }
+                }
+                // saveCart();
+            };
+            // Remove item from cart
+            obj.removeItemFromCart = function(id) {
+                var quantity = $("#product_" + id).attr("data-quantity");
+                //  console.log(quantity);
+                for (var item in cart) {
+                    if (cart[item].id === id) {
+                        cart[item].count--;
+                        if (cart[item].count < quantity) {
+                            cart.splice(item, 1);
+                        }
+                        break;
+                    }
+                }
+                // saveCart();
+            };
+
+            // Remove all items from cart
+            obj.removeItemFromCartAll = function(id) {
+                for (var item in cart) {
+                    if (cart[item].id === id) {
+                        cart.splice(item, 1);
+                        break;
+                    }
+                }
+                // saveCart();
+            };
+
+            // Clear cart
+            obj.clearCart = function() {
+                cart = [];
+                // saveCart();
+            };
+
+            // Count cart
+            obj.totalCount = function() {
+                var totalCount = 0;
+                for (var item in cart) {
+                    totalCount += cart[item].count;
+                }
+                return totalCount;
+            };
+
+            // Total cart
+            obj.totalCart = function() {
+                var totalCart = 0;
+                for (var item in cart) {
+                    totalCart += cart[item].price * cart[item].count;
+                }
+                let total = Number(totalCart.toFixed(2));
+                let min_amount = $('.min-amount').val();
+                console.log(total);
+                console.log(min_amount);
+                if (total >= min_amount) {
+                    $('#shipping-button').show();
+                    $('#min-para').hide();
+                } else {
+                    $('#shipping-button').hide();
+                    $('#min-para').show();
+                }
+                return Number(totalCart.toFixed(2));
+
+            };
+
+            // List cart
+            obj.listCart = function() {
+                var cartCopy = [];
+                for (i in cart) {
+                    item = cart[i];
+                    itemCopy = {};
+                    for (p in item) {
+                        itemCopy[p] = item[p];
+                    }
+                    itemCopy.total = Number(item.price * item.count).toFixed(2);
+                    cartCopy.push(itemCopy);
+                }
+                return cartCopy;
+            };
+            // removeItemFromCartAll : Function
+            // clearCart : Function
+            // countCart : Function
+            // totalCart : Function
+            // listCart : Function
+            // saveCart : Function
+            // loadCart : Function
+            return obj;
+        })();
+
+        // *****************************************
+        // Triggers / Events
+        // *****************************************
+        // Add item
+        $(".add-to-cart").click(function(event) {
+            event.preventDefault();
+            var name = $(this).data("name");
+            var price = Number($(this).data("price"));
+            var id = Number($(this).data("id"));
+            var count = Number($(this).data("quantity"));
+            shoppingCart.addItemToCart(name, price, count, id);
+            displayCart();
+        });
+
+        // Clear items
+        $(".clear-cart").click(function() {
+            shoppingCart.clearCart();
+            displayCart();
+        });
+
+        function displayCart() {
+            var cartArray = shoppingCart.listCart();
+            var output = "";
+            for (var i in cartArray) {
+                output += "<tr>" +
+                    "<input type='hidden' name='product_id[]' value=" + cartArray[i].id + " class='product-id' />" +
+                    "<td class='product-name' value=" + cartArray[i].name + ">" + cartArray[i].name + "</td>" +
+                    "<td value=" + cartArray[i].price + "><span>&#8377;</span>(" + cartArray[i].price + ")</td>" +
+                    "<td class='quan-width'><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" +
+                    cartArray[i].name + " data-id=" + cartArray[i].id + ">-</button>" +
+                    "<button type='number'  value=" + cartArray[i].count +
+                    " class='item-count item-count-zero form-control disabled ' data-name='" + cartArray[i].name +
+                    "'  data-id='" + cartArray[i].id + "' value='" + cartArray[i].count + "'>" + cartArray[i].count +
+                    "</button>" +
+                    "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name +
+                    " data-id=" + cartArray[i].id + ">+</button></div></td>" +
+                    "<td><button class='delete-item btn btn-danger' style=background-color:#bb2d3b; data-name=" + cartArray[
+                        i].name + " data-id=" + cartArray[i].id + ">X</button></td>" +
+                    " = " +
+                    "<td><span>&#8377;</span> " + cartArray[i].total + "</td>" +
+                    "<input type='hidden' class='product-price' name='price[]' value=" + cartArray[i].total + " />" +
+                    "<input type='hidden' class='product-quantity' name='quantity[]' value=" + cartArray[i].count + " />" +
+                    "<input type='hidden' class='grand-total' name='grand_total' value=" + shoppingCart.totalCart() +
+                    " />" +
+                    "</tr>";
+            }
+            $(".show-cart").html(output);
+            $(".total-cart").html(shoppingCart.totalCart());
+            $(".total-count").html(shoppingCart.totalCount());
+        }
+        // Delete item button
+
+        $(".show-cart").on("click", ".delete-item", function(event) {
+            var id = $(this).data("id");
+            shoppingCart.removeItemFromCartAll(id);
+            displayCart();
+        });
+
+        // -1
+        $(".show-cart").on("click", ".minus-item", function(event) {
+            var id = $(this).data("id");
+            //   console.log(id);
+            shoppingCart.removeItemFromCart(id);
+            displayCart();
+        });
+        // +1
+        $(".show-cart").on("click", ".plus-item", function(event) {
+            var id = $(this).data("id");
+            //   console.log(id)
+            shoppingCart.addQuantityToCart(id);
+            displayCart();
+        });
+
+        // Item count input
+        $(".show-cart").on("change", ".item-count", function(event) {
+            var id = $(this).data("id");
+            var count = Number($(this).val());
+            shoppingCart.setCountForItem(id, count);
+
+            displayCart();
+        });
+
+        displayCart();
+
+        $(document).ready(function() {
+
+            $(".btn-submit").on("submit", function(e) {
+                e.preventDefault();
+                var form_data = $(this).serialize();
+                var product_id = $(".product-id").val();
+                //console.log(product_id);
+                var user_id = $(".user-id").val();
+                var shipping_address = $("#address-id").val();
+                var shop_id = $(".shop-id").val();
+                var name = $(".product-name").val();
+                var price = $(".product-price").val();
+                //console.log(price);
+                // console.log(name);
+                // console.log(quantity);
+                // console.log(user_id);
+                var quantity = $(".product-quantity").val();
+                var grand_total = $(".grand-total").val();
+
+                var payment_type = $("#payment-type").val();
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://farmernear.me/checkout',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: form_data,
+                    cache: false,
+                    success: function(response, status, xhr) {
+                        if (xhr.status === 201) {
+                            // put errors in some element above or below the form
+                            return $(".errors").html(response.message)
+                        }
+                        // clear previous errors
+                        $(".errors").html("");
+                        // success stuff here
+                        console.log(response);
+                        var dataResult = JSON.stringify(dataResult);
+                        console.log(status);
+                        if (status == 'success') {
+                            console.log('ok');
+                            window.location.href = 'https://farmernear.me/thank-you';
+                        } else {
+                            alert("Error occured !");
+                        }
+
+                    },
+                    error: function(error) {
+                        window.location.href = 'https://farmernear.me/thank-you';
+                        console.log("Error!!!!" + error);
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        var slider = new Swiper('.gallery-slider', {
+            slidesPerView: 1,
+            centeredSlides: true,
+            loop: true,
+            loopedSlides: 6,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        var thumbs = new Swiper('.gallery-thumbs', {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            centeredSlides: true,
+            loop: true,
+            slideToClickedSlide: true,
+        });
+
+        //3
+        //slider.params.control = thumbs;
+        //thumbs.params.control = slider;
+
+        //4
+        slider.controller.control = thumbs;
+        thumbs.controller.control = slider;
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#shipping-button').click(function() {
+                $('#shipping-div').toggle('slow', function() {
+                    // Animation complete.
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#cancel-now').click(function() {
+                $('#shipping-div').hide();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#gridCheck").on("click", function() {
+                $("#billing-div").toggle(this.checked);
+            });
+        });
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("order-now").innerHTML = "Please Wait..";
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#number').click(function() {
+                $(this).find('span').text($(this).data('last'));
+            });
+        });
+    </script>
+
+</body>
+
+</html>
